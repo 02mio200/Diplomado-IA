@@ -23,7 +23,7 @@ num3 = float(input("Introduce el tercer número: "))
 
 todos_positivos = num1 > 0 and num2 > 0 and num3 > 0
 
-al_menos_un_negativo = al_menos_uno_negativo = num1 < 0 or num2 < 0 or num3 < 0
+al_menos_un_negativo = num1 < 0 or num2 < 0 or num3 < 0
 
 orden = en_orden_decreciente = num1 > num2 > num3
 # -------------------------------------------------------------------
