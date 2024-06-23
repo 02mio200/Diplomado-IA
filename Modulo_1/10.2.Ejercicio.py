@@ -10,3 +10,16 @@
 # 5. Imprima la lista ordenada de estudiantes con sus promedios.
 
 # Definir la lista de diccionarios con los estudiantes y sus calificaciones
+estudiantes = [
+    {"nombre": "Alice", "matematicas": 85, "literatura": 78, "ciencia": 92},
+    {"nombre": "Bob", "matematicas": 89, "literatura": 94, "ciencia": 85},
+    {"nombre": "Charlie", "matematicas": 72, "literatura": 67, "ciencia": 80},
+    {"nombre": "David", "matematicas": 90, "literatura": 88, "ciencia": 91},
+    {"nombre": "Eva", "matematicas": 88, "literatura": 76, "ciencia": 85}
+]
+
+for estudiante in estudiantes:
+    calificaciones = [estudiante["matematicas"], estudiante["literatura"], estudiante["ciencia"]]
+    promedio = sum(calificaciones) / len(calificaciones)
+    estudiante["promedio"] = promedio
+    print(f' {estudiante["nombre"]}, tiene promedio de: {estudiante["promedio"]:.2f}')
