@@ -19,7 +19,7 @@ estudiantes = [
 ]
 
 for estudiante in estudiantes:
-    calificaciones = [estudiante["matematicas"], estudiante["literatura"], estudiante["ciencia"]]
-    promedio = sum(calificaciones) / len(calificaciones)
+    calificaciones = estudiante["matematicas"] + estudiante["literatura"] + estudiante["ciencia"] 
+    promedio = calificaciones / 3
     estudiante["promedio"] = promedio
     print(f' {estudiante["nombre"]}, tiene promedio de: {estudiante["promedio"]:.2f}')
